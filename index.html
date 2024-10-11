@@ -5,18 +5,33 @@
     <meta name="description" content="This is my webpage" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daps Webpage</title>
+
+    <style>
+      body {
+        background-color: blanchedalmond;
+      }
+
+      p {
+        color: blue;
+        font-family: cursive;
+        font-weight: 900;
+      }
+    </style>
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a target="_blank" href="https://github.com/Oladapo-cyber">My Github</a>
-      </nav>
-    </header>
-    <h1>
+    <nav id="navbar">
+      <a class="navLink" href="index.html">Home</a>
+      <a class="navLink" href="./about.html">About</a>
+      <a class="navLink" href="./contact.html">Contact</a>
+      <a class="navLink" target="_blank" href="https://github.com/Oladapo-cyber"
+        >My Github</a
+      >
+      <button id="estimateBtn">Estimate a project</button>
+    </nav>
+
+    <h1 style="color: red; font-size: 30px; background-color: aqua">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
       possimus
     </h1>
@@ -25,7 +40,7 @@
     <h4>Lorem ipsum dolor sit.</h4>
     <h5>Lorem, ipsum dolor.</h5>
     <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h6>
-    <p>
+    <p style="color: rgb(240, 127, 146)">
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Temporibusdignissimos ipsum nihil! Soluta, rerum eligendi.
     </p>
