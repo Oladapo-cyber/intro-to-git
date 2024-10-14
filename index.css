@@ -51,6 +51,10 @@ h1 {
   background-color: black;
   font-weight: 700;
   color: white;
+  /* The commented out transition property has a 200ms delay meaning it would take 200ms before the transition would activate, which isn't necessary in this case. */
+  /* transition: 500ms linear 200ms; */
+
+  transition: 500ms linear;
 }
 
 /* Descendant combinator: Targets both child or grandchildren of a tag. */
