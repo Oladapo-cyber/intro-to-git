@@ -4,7 +4,7 @@ img {
 }
 
 body {
-  padding: 10px;
+  background-color: aqua;
   margin: 0;
   cursor: url("./Images/move.png"), pointer;
 }
@@ -23,8 +23,17 @@ h1 {
 }
 
 .navLink {
+  text-decoration: none;
+  margin-left: 10px;
   cursor: url("./Images/move.png"), pointer;
   color: black;
+  text-transform: capitalize;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+  color: #fd4601;
 }
 
 #estimateBtn {
@@ -36,4 +45,34 @@ h1 {
   text-transform: uppercase;
   border-radius: 25px;
   cursor: url("./Images/move.png"), pointer;
+}
+
+#estimateBtn:hover {
+  background-color: black;
+  font-weight: 700;
+  color: white;
+}
+
+/* Descendant combinator: Targets both child or grandchildren of a tag. */
+.box p {
+  color: red;
+}
+
+/* Child combinator targets only the direct children of the tag, using the > sign */
+.box > p {
+  color: blue;
+}
+
+/* Adjacent sibling selector. It's used to select an element that is the direct sibling of the specified element*/
+
+.box + p {
+  color: green;
+  font-size: larger;
+}
+
+#text {
+  text-align: left;
+  line-height: 40px;
+  word-spacing: 10px;
+  letter-spacing: 2px;
 }
